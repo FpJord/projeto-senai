@@ -1,8 +1,8 @@
-var swiper = new Swiper(".pictures", {
+var swiper = new Swiper(".slide-content", {
     slidesPerView: 3,
     spaceBetween: 30,
     slidesPerGroup: 3,
-    loop: true;
+    loop: true,
     loopFillGroupWithBlank: true,
     pagination: {
         el: ".swiper-pagination",
@@ -10,6 +10,6 @@ var swiper = new Swiper(".pictures", {
     },
     navigation: {
         nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    }
-})
+        prevEl: ".swiper-buttton-prev",
+    },
+});

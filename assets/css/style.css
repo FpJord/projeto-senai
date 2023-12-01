@@ -18,9 +18,8 @@
 
 header {
   width: 100%;
-  
-  height: 180px;
 
+  height: 180px;
 
   display: flex;
   align-items: center;
@@ -50,7 +49,7 @@ header > #logo-header {
 }
 
 .functions > div > i {
-  color: #1F4662;
+  color: #1f4662;
   font-style: bold;
 }
 
@@ -90,7 +89,6 @@ a {
   text-decoration: none;
 }
 
-
 .sections {
   margin-top: 10px;
   display: flex;
@@ -108,9 +106,6 @@ a {
   gap: 60px;
 
   font-size: 20px;
-
-  
-
   list-style: circle;
 
   margin: 0;
@@ -121,220 +116,102 @@ a {
   height: 3px;
 }
 
-
-#gallery {
-
-  display: flex; 
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  margin-top: 10px;
- 
-
-  
-}
-
-.pictures { 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-
-  transition: 2s ease-in-out;
-}
-
-.gallery-pic {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  position: relative;
-
-  width: 280px;
-  height: 428px;
-
-
-  transition: 2s ease-in-out;
-}
-
-.gallery-pic > img {
-  width: 280px;
-  height: 428px;
-  object-fit: cover;
-}
-
-.product-info {
-  width: 100%;
-  height: 100%;
-  top: 0;
-  right: 0;
-  position: absolute;
-  background: rgba(34, 34, 34, 0.541);
-  backdrop-filter: blur(2px);
-
-  color: #fff;
-  padding: 30px;
-
-  display: none;
-
-  transition: 2s ease-in-out;
-}
-
-.card-title {
-  margin-top: 205px;
-  font-size: 28px;
-}
-
-.card-info {
-  margin-bottom: 30px;
-  font-size: 14px;
-}
-
-.card-btn {
-  width: 200px;
-  height: 40px;
-
-  background: #fff;
-  font-family: 'Montserrat';
-  font-weight: 500;
-
-  border: none;
-  border-radius: 5px;
-
-  transition: 0.3s;
-}
-
-.card-btn:hover {
-  background: #9dc3de;
-  color: #fff;
-}
-
-.gallery-pic:hover .product-info {
-  display: block;
-  
-}
-
-
-#informations {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 172px;
-
-  margin-top: 20px;
-  
-}
-
-.informations-text {
-  width: 217px;
-
-  display: flex;
-  gap: 5px;
-  align-items: center;
-  justify-content: center;
-
-}
-
-.informations-text > i{
-  font-size: 40px;
-  font-weight: 700;
-  margin-top: -12px;
-}
-
-.informations-text > h1 {
-  font-size: 14.5px;
-  font-weight: 700;
-}
-
-.informations-text > h1 > span {
-  font-size: 14.5px;
-  font-weight: 700;
-
-  color: #5A87A8;
-}
-
 .products {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  margin-top: 30px;
 }
 
-.products-title { 
+.products-grid {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  gap: 80px;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+.products-title {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-
-  margin-top: 50px;
 }
 
-.products-title > img { 
-  width: 20%;
-  border: 1px solid rgb(218, 218, 218);
+.products-title > img {
+  width: 30%;
 }
 
 .products-title > h1 {
-  color: rgba(0, 123, 140, 0.70);
-
-  font-family: 'Montserrat';
+  color: rgba(0, 123, 140, 0.7);
   font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
+  font-weight: 700px;
 }
-
 
 .product-card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 10px;
+  border-radius: 5px;
+  background: #fff;
+
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   
 
-  width: 320px;
-height: 511px;
+  width: 340px;
+  height: 511px;
 
-margin-top: 50px;
-
-border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.product-card > img {
-  width: 100%;
-height: 60%;
+#product-image {
+  width: 300px;
+  height: 300px;
+
+  border-radius: 5px;
+
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  object-fit: cover;
 }
 
 .product-card > h2 {
-  color: #1B2848;
-font-size: 16px;
-font-weight: 600;
-text-transform: uppercase;
-font-family: 'Montserrat';
+  margin-top: 22px;
+  color: #1b2848;
 
-margin-left: 25px;
+  font-size: 20px;
+  font-weight: 600;
+
 }
 
-.product-card > h1 {
+.product-card > span {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 34px;
   font-family: 'Inter';
-font-size: 20px;
-font-style: normal;
-font-weight: 700;
-
-margin-left: 30px;
 }
 
-.product-card > button { 
+.product-card > a > button {
   width: 280px;
 height: 50px;
-
 border-radius: 5px;
 background: #007B8C;
 
 font-family: 'Montserrat';
-font-size: 26px;
-font-weight: 700;
 color: #fff;
-
+font-size: 24px;
+font-weight: 700;
 border: none;
+cursor: pointer;
+
+margin-left: 20px;
+}
+
+.product-card > img, h2, span {
+  margin-left: 20px;
 }
