@@ -121,6 +121,7 @@ function zoomRecomendacao(posicao){
     let recSelecionado = listaRecomendancao[posicao];
     document.getElementById("nome-produto").innerHTML = recSelecionado.nome;
     document.getElementById("imagem-produto").src = recSelecionado.imagem;
+ 
 
     new boostrap.Modal('#zoomProduct').show();
 
