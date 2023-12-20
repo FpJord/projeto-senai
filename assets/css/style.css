@@ -416,12 +416,10 @@ footer > img {
   align-items: center;
   justify-content: center;
 
-  padding: 20px 120px 30px 110px;
+  padding: 20px 130px 30px 130px;
 
   position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  margin-left: -12vw;
 
   z-index: 15;
 }
@@ -439,10 +437,10 @@ footer > img {
 }
 
 #modal-produto > img {
-  width: 300px;
-  height: 435px;
+  width: 80%;
+  height: 80%;
 
-  margin-right: 36px;
+  margin-right: 22px;
 }
 
 .modal-description > h1 {
@@ -597,3 +595,7 @@ footer > img {
   z-index: -1;
 }
 
+
+#modal-conteudo {
+  width: 0%;
+}
