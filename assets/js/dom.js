@@ -296,6 +296,12 @@ let listaAnel = [
     imagem: "assets/img/Anel Falange Duplo Aço.svg",
   },
 
+  {
+    nome: "Anel Falange Duplo Aço",
+    preço: "12",
+    imagem: "assets/img/Anel Falange Duplo Aço.svg",
+  },
+
 ];
 
 listaAnel.map((produto, posicao) => {
@@ -415,5 +421,7 @@ let listaTornozeleira = [
     preço: "15",
     imagem: "assets/img/Tornozeleira.svg",
   },
+
+  
 
 ];

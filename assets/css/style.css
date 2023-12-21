@@ -263,14 +263,33 @@ hr{
   height: 2700px;
 }
 
+.aneis{
+  display: flex;
+  
+  flex-direction: column;
+}
+.aneis > select{
+  width: 206px;
+ height: 35px;
+ border: 2px solid red;
+ padding-right: 30px;
+ margin-right: 20px;
+ 
+  
+}
 
+#aneis-iframe{
+  display: none;
+  border: 1px solid red;
+}
 
-#teste:active > #z-index1{
-  display: block;
+#aneis:active {
+  border: 1px solid red;
+
 }
 
 
-#teste:active > #z-index2{
+#aneis:active #z-index{
   display: none;
 }
 
@@ -680,6 +699,25 @@ footer > img {
 .finish > button:hover {
   scale: 1.05;
 }
+
+
+
+.quadradao{
+  
+ display: flex;
+ 
+}
+
+.quadradao > .container-lado-grid > aside > select{
+ 
+  
+}
+
+.quadradao > .container-lado-grid > aside > .asideflex{
+ 
+ 
+}
+
 
 #close {
   width: 61px;

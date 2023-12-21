@@ -43,7 +43,7 @@
 
             <button id="teste">botao</button>
 
-            <input type="radio" name="navbar" class="aneis">
+            <input type="radio" name="navbar" id="aneis">
             <label for="aneis" class="page1">Aneis</label>
                 
             <input type="radio" name="navbar" id="brincos">
@@ -57,6 +57,9 @@
             
         
         </div>
+
+        <iframe src="page1.html" id="aneis-iframe" frameborder="0"></iframe>
+
         <hr>
         <div class="carrossel">
             <iframe src="assets/carrossel.html" width="1200px" height="610px" frameborder="0"></iframe>
@@ -93,7 +96,7 @@
         
         
         
-        <div id="z-index">
+        <div id="z-indexcvx">
             <div class="products">
                 <div class="products-title">
                     <img src="assets/img/line.svg" alt="Line">
@@ -156,10 +159,37 @@
                 </div>
               </div>
         </div>
-        
+               
+  <div class="quadradao">
+       
 
-  <div class="aneis" id="dom-anel">
     
+
+      <div class="container-lado-grid">
+        <div class="asideflex">
+            <h1>teste</h1>
+            <p>Caixa</p>
+        </div>
+         <aside>
+            <select name="caixanel" id="canel" >
+                
+
+                <option value="v1">Ordem alfabética</option>
+                <option value="v2">Maior preço</option>
+                <option value="v3">Menor preço</option>
+                <option value="v4">Mais vendidos</option>
+        
+                </select>
+
+            
+           
+                
+           <!-- aside -->
+         </aside>
+          <div class="aneis" id="dom-anel">
+          <!-- grid -->
+          </div>
+      </div>
   </div>
 
 
@@ -237,7 +267,7 @@
 
 <script>
 
-    $(".aneis").click(function () {
+    $("#teste").click(function () {
       $("#z-index").load("page1.html");
     });
 
