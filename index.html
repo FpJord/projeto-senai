@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="pt-br"> 
     <head>
         <meta charset="UTF-8">
@@ -40,10 +40,11 @@
         <hr>
         <div class="navbar">
 
-           
-            
-            <input type="radio" name="navbar" id="aneis">
-            <label for="aneis">Aneis</label>
+
+            <button id="teste">botao</button>
+
+            <input type="radio" name="navbar" class="aneis">
+            <label for="aneis" class="page1">Aneis</label>
                 
             <input type="radio" name="navbar" id="brincos">
             <label for="brincos">Brincos</label>
@@ -92,80 +93,71 @@
         
         
         
-        <div class="products">
-            <div class="products-title">
-                <img src="assets/img/line.svg" alt="Line">
-                <h1>Confira nossos produtos</h1>
-                <img src="assets/img/line.svg" alt="Line">
-            </div>
-
-
-            <div class="products-grid" id="first-dom">
-                
-            </div>
-        </div>
-
-
-        <div class="recomendations">
-            <div class="products-title">
-                <img src="assets/img/line.svg" alt="Line">
-                <h1>Recomendamos para você</h1>
-                <img src="assets/img/line.svg" alt="Line">
-            </div>
-
-            <div class="products-grid" id="second-dom">
-                
-            </div>
-        </div>
-
-            <!-- Button trigger modal -->
-
-  
-  <!-- Modal -->
-  <div class="modal fade" id="zoomProduct" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content" id="modal-conteudo">
-        <div id="modal-produto">
-            <img src="assets/img/Chocker Escama de Peixe.svg" alt="Chocker Escama de Peixe" id="imagem-produto">
-
-            <div class="modal-informations">
-                <div class="modal-description">
-                    <h1 id="nome-produto">Cordão Escama de Peixe Dourada</h1>
-
-                    <ul>
-                        <li>Aço Inoxidável</li>
-                        <li>Não Enferruja</li>
-                        <li>Hipoalergênicos</li>
-                    </ul>
+        <div id="z-index">
+            <div class="products">
+                <div class="products-title">
+                    <img src="assets/img/line.svg" alt="Line">
+                    <h1>Confira nossos produtos</h1>
+                    <img src="assets/img/line.svg" alt="Line">
                 </div>
-
-                <p class="advice">
-                    O cliente ao clicar em comprar será redirecionado automaticamente para o Whatsapp para concluir a compra.
-                </p>
-                
-                <img src="assets/img/line.svg" alt="line" width="100%" class="line">
-
-                <div class="price">
-                    <div class="quantity">
-                        <span class="minus">-</span>
-                        <span class="number"></span>
-                        <span class="plus">+</span>
-                    </div>
-                    <h2 class="value">R$<span id="value-number"></span>.00</h2>
-                </div>
-
-                <div class="finish">
-                    <button><i class="bi bi-bag-dash"></i> ADICIONAR</button>
-                    <button><i class="bi bi-currency-dollar"></i> COMPRAR</button>
-                </div>
-
+                <div class="products-grid" id="first-dom">
             
+                </div>
             </div>
+            <div class="recomendations">
+                <div class="products-title">
+                    <img src="assets/img/line.svg" alt="Line">
+                    <h1>Recomendamos para você</h1>
+                    <img src="assets/img/line.svg" alt="Line">
+                </div>
+                <div class="products-grid" id="second-dom">
+            
+                </div>
+            </div>
+                <!-- Button trigger modal -->
+            
+              
+              <!-- Modal -->
+              <div class="modal fade" id="zoomProduct" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content" id="modal-conteudo">
+            <div id="modal-produto">
+                <img src="assets/img/Chocker Escama de Peixe.svg" alt="Chocker Escama de Peixe" id="imagem-produto">
+                <div class="modal-informations">
+                    <div class="modal-description">
+                        <h1 id="nome-produto">Cordão Escama de Peixe Dourada</h1>
+                        <ul>
+                            <li>Aço Inoxidável</li>
+                            <li>Não Enferruja</li>
+                            <li>Hipoalergênicos</li>
+                        </ul>
+                    </div>
+                    <p class="advice">
+                        O cliente ao clicar em comprar será redirecionado automaticamente para o Whatsapp para concluir a compra.
+                    </p>
+            
+                    <img src="assets/img/line.svg" alt="line" width="100%" class="line">
+                    <div class="price">
+                        <div class="quantity">
+                            <span class="minus">-</span>
+                            <span class="number"></span>
+                            <span class="plus">+</span>
+                        </div>
+                        <h2 class="value">R$<span id="value-number"></span>.00</h2>
+                    </div>
+                    <div class="finish">
+                        <button><i class="bi bi-bag-dash"></i> ADICIONAR</button>
+                        <button><i class="bi bi-currency-dollar"></i> COMPRAR</button>
+                    </div>
+            
+                </div>
+            </div>
+                  </div>
+                </div>
+              </div>
         </div>
-      </div>
-    </div>
-  </div>
         
+
 
 
 
@@ -205,14 +197,14 @@
                 <div class="footer-section" id="redes">
                     <h1>Nossas Redes</h1>
                     <br>
-                    <a href="">
+                    <a href="" target="_blank">
                         <div class="whatsapp">
                             <img src="assets/img/whatsapp (1) 1.svg" alt="">
                             <p class="redes-redes">Whatsapp</p>
                         </div>
                      </a>
 
-                     <a href="https://www.instagram.com/use_doseujeito/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==">
+                     <a href="https://www.instagram.com/use_doseujeito/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" target="_blank">
                         <div class="instagram">
                             <img src="assets/img/instagram (1) 1.svg" alt="">
                             <p>Instagram</p>
@@ -239,5 +231,16 @@
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+
+<script>
+
+    $(".aneis").click(function () {
+      $("#z-index").load("page1.html");
+    });
+
+  </script>
+
+
 </body>
 </html>
