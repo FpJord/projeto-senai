@@ -256,7 +256,23 @@ hr{
   color: #091022;
   font-weight: 700;
 }
-iframe
+
+.z-index{
+  border: 1px solid red;
+  width: 100vw;
+  height: 2700px;
+}
+
+
+
+#teste:active > #z-index1{
+  display: block;
+}
+
+
+#teste:active > #z-index2{
+  display: none;
+}
 
 .products {
   display: flex;
