@@ -5,7 +5,9 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  transition-timing-function: ease;
+ 
+ 
+ 
 }
 
 body {
@@ -18,7 +20,7 @@ body {
 .main {
   width: 100vw;
   height: 100vh;
-
+ 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,7 +35,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 200px;
+  gap: 100px;
   font-family: "Montserrat";
 }
 
@@ -72,6 +74,7 @@ header > #logo-header {
 
 #search-field > i {
   margin-left: -39px;
+  cursor: pointer;
   
 }
 
@@ -84,11 +87,14 @@ header > #logo-header {
   border-radius: 10px;
   border: 1px solid #9dc3de;
   background: #f5fbff;
-
+  color: #1F4662;
+  font-weight: 500;
   box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.1);
 
   outline: none;
 }
+
+
 
 input[type="radio"]{
   -webkit-appearance: none;
@@ -107,6 +113,30 @@ a {
   text-decoration: none;
 }
 
+
+.carrinho{
+  display: flex;
+  height: 35px;
+  width: 250px;
+  color: #1F4662;
+  font-family: var(--font-montserrat);
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+  gap: 5px;
+}
+
+.carrinho > img{
+  width: 20px;
+  height: 24px;
+  color: #1F4662;
+  margin-top: 4px;
+  
+}
+
+.carrinho > #p-carrinho{
+  width: 155px;
+}
 
 
 .navbar{
@@ -138,45 +168,59 @@ hr{
   width: 100%;
 }
 
+.carrossel{
+  width: 1200px;
+  height: 700px;
+
+ 
+
+}
+
+
+
 
 #carouselExampleControls{
+  overflow-y: hidden;
   width: 1200px;
-  height: 600px;
+  height: 550px;
   margin-top: 30px;
   margin-bottom: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  
+
 }
 
 #carouselExampleControls > .carousel-inner img{
   width: 310px;
   height: 100%;
   
-
+ 
 }
 
 #carouselExampleControls > .carousel-inner > .carousel-item > .imgs {
   display: flex;
   gap: 10px;
-  margin-left: 134px;
+  margin-left: 137px;
 }
+
+
 
 #carouselExampleControls > .carousel-inner{
  display: flex;
- 
+
 }
 
 #carouselExampleControls > .carousel-inner > .carousel-item > .carrossel-img {
   width: 900px;
-
- 
 }
 
-#foto-meio{
-  transform: scale(1.01);
-
+#carouselExampleControls > a > .sr-only{
+  display: none;
 }
+
 .carousel-control-next-icon{
   filter: invert(1);
   transform: scale(2);
@@ -188,17 +232,11 @@ hr{
   transform: scale(2);
 }
 
-
-#carouselExampleControls > a > .sr-only{
-  display: none;
-}
-
-
-
 .icons{
   display: flex;
   gap: 160px;
   padding-left: 10px;
+  margin-bottom: 40px;
 }
 
 .icons > .icon-do-icon{
@@ -218,7 +256,7 @@ hr{
   color: #091022;
   font-weight: 700;
 }
-
+iframe
 
 .products {
   display: flex;
@@ -254,6 +292,7 @@ hr{
 
 .products-title > img {
   width: 30%;
+  
 
 }
 
@@ -306,6 +345,7 @@ hr{
   margin-bottom: 34px;
   font-family: "Inter";
   margin-left: 30px;
+  
 }
 
 .product-card > button {
@@ -326,14 +366,21 @@ hr{
 
   margin-left: 30px;
   margin-top: -10px;
+  
 }
 
-.product-card >
+.product-card > button:hover {
+  transform: scale(1.05);
+  color: #1B2848;
+  transition: ease-in-out 0.2s;
+
+}
 
 .product-card > img,
 h2,
 span {
   margin-left: 20px;
+  
 }
 
 .product-card > a > button:hover {
@@ -345,48 +392,105 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-
+ 
   width: 100%;
-  height: 900px;
+  height: 600px;
+  padding-bottom: 80px;
+ 
   background-color: #e7edff;
-
-  padding-top: 80px;
-  padding-bottom: 50px;
 }
 
 footer > img {
+  width: 400px;
+  height: 400px;
   margin-right: 50px;
+
+ margin-bottom: -10px;
 }
 
 .footer-grid {
   display: grid;
+  height: 540px;
   grid-template-columns: 200px 200px 200px 200px;
   gap: 50px;
+  
+  
+  
+ 
 
   align-items: center;
   justify-content: center;
 }
 
 .footer-section {
+ 
   width: 11vw;
-  height: 30vh;
+  height: 23vh;
+
+  margin-top: 120px;
+ 
+}
+
+#atendimento > .contact-number > p{
+  font-size: 14pt;
+
+}
+
+#redes > a{
+  color: #091022;
+}
+
+#redes > a > .whatsapp > p, .instagram > p{
+  font-size: 13pt;
+  font-family: 600;
+}
+
+#redes > a > .whatsapp > img, .instagram > img{
+  margin-bottom: 15px;
+}
+
+#redes > a:hover > .whatsapp > p{
+  font-weight: 700;
+  transition: ease-in-out 0.1s;
+
+
+}
+
+#redes > a:hover > .instagram > p{
+  font-weight: 700;
+  transition: ease-in-out 0.1s;
+
 }
 
 .footer-section > h1 {
-  font-size: 20px;
+  font-size: 16pt;
   color: #091022;
-
+  font-family: 'montserrat';
   text-transform: uppercase;
   font-weight: 700;
 }
 
 .footer-section > p {
-  font-size: 16px;
+  font-size: 14pt;
+  font-weight: 400;
+}
+
+ #entregas{
+ 
+  margin-top: -30px;
 }
 
 .contact-number {
   display: flex;
   gap: 5px;
+  
+}
+
+
+#footer > .footer-grid > #redes a {
+  text-decoration: none;
+ 
+
 }
 
 .whatsapp,
@@ -403,8 +507,8 @@ footer > img {
 /* Modal */
 
 #modal-produto {
-  width: 800px;
-  height: 500px;
+  width: 840px;
+  height: 450px;
 
   border-radius: 20px;
   background: #cfebff;
@@ -439,7 +543,7 @@ footer > img {
 #modal-produto > img {
   width: 80%;
   height: 80%;
-
+ 
   margin-right: 22px;
 }
 
@@ -598,4 +702,6 @@ footer > img {
 
 #modal-conteudo {
   width: 0%;
+
 }
+

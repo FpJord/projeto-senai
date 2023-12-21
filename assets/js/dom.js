@@ -1,6 +1,7 @@
 let listaProdutos = [
   {
-    nome: "Chocker Coração de Prata",
+    nome: "Chocker Coração de Prata ",
+   
     preço: "22",
     imagem: "assets/img/Chocker Coração.svg",
   },
@@ -18,7 +19,7 @@ let listaProdutos = [
   },
 
   {
-    nome: "Chocker Coração Dourado",
+    nome: "Chocker Coração Dourado <br> <br>  ",
     preço: "22",
     imagem: "assets/img/Chocker Dourada.svg",
   },
@@ -94,7 +95,7 @@ function zoomProduct(posicao){
 
 let listaRecomendancao = [
   {
-    nome: "Cordão Pingente Menina",
+    nome: "Cordão Pingente Menina <br> <br>",
     preço: "20",
     imagem: "assets/img/Pingente Menina.svg",
   },
@@ -118,13 +119,13 @@ let listaRecomendancao = [
   },
 
   {
-    nome: "Argola M Prata",
+    nome: "Argola M Prata <br> <br>",
     preço: "8",
     imagem: "assets/img/Argola M.svg",
   },
 
   {
-    nome: "Argola M G Prata",
+    nome: "Argola M G Prata <br> <br>",
     preço: "10",
     imagem: "assets/img/Argola G.svg",
   },
