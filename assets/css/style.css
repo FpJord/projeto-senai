@@ -540,6 +540,7 @@ footer > img {
 
   position: fixed;
   margin-left: -12vw;
+  margin-top: 10vw;
 
   z-index: 15;
 }
@@ -721,3 +722,13 @@ footer > img {
 
 }
 
+
+.aneis {
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  gap: 50px;
+}
+
+.aneis > div {
+ scale: 0.8;
+}
